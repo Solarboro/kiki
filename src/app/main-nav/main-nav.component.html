@@ -1,0 +1,13 @@
+<div class="ui six item secondary pointing pink stackable menu">
+
+    <a class="item"
+        *ngFor="let url of urlList"
+        [routerLinkActive]="'active'" 
+        [routerLink]="[url.url]"
+        >
+
+        <i class="{{url.urlIcon}}"></i>
+
+        {{ url.urlDesc }}
+    </a>
+</div>
